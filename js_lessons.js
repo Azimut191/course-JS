@@ -1,5 +1,3 @@
-let colorEyes = 'карий';
-let user;
-let userName = 'Вася';
-user = userName;
-console.log(user);
+let userCounter = 0;
+let newUser = userCounter++;
+console.log(newUser);
