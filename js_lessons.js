@@ -1,75 +1,79 @@
-// синтаксис
-let message = "Привет Фрилансер";
-let first = 5;
-let second = 6;
- if (2>1) {
-  // тут мы напишем код который должен выполниться ксли сработет if 
-  // и благодаря скобкам он относиться только к if
-  console.log(message); 
- }
- else {
- console.log("условие 1 не выполнено");
- }
- if (first===second) {
- console.log(message);
- } 
- else{
- console.log("Условие 2 не выполнено");
- }
-let number = 40;
- if (number>50) {
-    console.log(number + " больше 50");
- }
- else if (number>30) {
-    console.log(number + " больше 30");
- }
- else if (number>10) {
-    console.log(number + " больше 10");
- }
- else if (number >1){
-    console.log (number +" больше 1");
- }
- else  {
-    console.log ("не одно из условий не выполнилось");
- }
-let messagePrivet = "Привет";
-let messageEnd;
- if (5>50) {
-    messageEnd = " Вася";
- }
- else if (5>30){
-    messageEnd = " Оля";
- }
- else if (5>10) {
-    messageEnd = " Миша";
- }
- else if (5>1) {
-    messageEnd = " Денис";
- }
- else {
-    messageEnd = " незнакомец";
- }
- messagePrivet += messageEnd;
- console.log (messagePrivet);
- 
- 
-console.log ("Домашка- ");
-let istina = ("Истина");
-let logh = ("ложь");
- console.log ("вариант 1")
-  if (1==="1") {
-    console.log(istina);
-  }
-  else {
-    console.log(logh);
+let num = 0;
+while (num < 5) {
+   console.log(num);
+   num++;
 }
- console.log ("Вариант 2");
-  if (5 == "5") {
-    console.log(istina);
-  }
-  else {
-    console.log (logh);
-  }
- console.log ("вариант 3");
-  let message2 = (92>'11' && 58 < 100) ? istina : logh;
-  console.log(message2);
+console.log ('--------');
+let num1 = 5;
+while (num1) {
+   console.log(num1);
+   num1--;
+} 
+console.log ("----------")
+let num3 = 0;
+for (; num3 <5; num3++) {
+   console.log(num3);
+}
+console.log (`Вывод вне цикла: ${num3}`);
+console.log ("---Деректива стоп (break)----");
+let num4= 0;
+for (; num4 < 10; num4++) {
+   console.log(num4);
+   if (num4 == 7) break;
+}
+console.log(`Работа закончена потому что мы достиги нужного в условии значения ${num4}`);
+console.log ('---Деректива пропустить (continue)---');
+for (num = 0; num<5; num++) {
+   if (num==2) continue;
+   console.log(num);
+}
+console.log("-- Работа с метками цикла--")
+let num5 = 0;
+firstfor: for (; num5<5; num5++) {
+   for (size = 0; size <3; size++) {
+      if (size==5) {
+         break firstfor;
+      }
+      console.log(`${num5} ${size}`);
+   }
+}
+console.log ("ДОМАШКА");
+console.log ("Задача1");
+let dz =0;
+while (dz<5) {
+   console.log(dz);
+   dz++
+}
+while (dz) {
+   console.log(dz);
+   dz--
+}
+do {
+   console.log(dz);
+   // dz++;
+} while (dz==5);
+for (; dz<6; dz++) {
+   console.log (dz);
+}
+console.log ("Задача 2 - тут должно быть от 8-1");
+dz =8;
+while (dz) {
+   console.log(dz);
+   dz--;
+}
+console.log ('Задача 3');
+dz =0 
+while (dz<3){
+   console.log (`Число: ${dz}`);
+   dz++;
+}
+console.log("Задача 4");
+dz=0
+twofor: for (; dz<2; dz++){
+   for (size=0; size<3; size++) {
+     if (size==1) {
+      break twofor;
+   }
+   console.log(size);
+}
+}
